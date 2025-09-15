@@ -3,6 +3,11 @@
 #include <iostream>
 #include <cstdlib>
 
+/*===========================*/
+/*======== Rules=============*/
+//# column 1 > 1.45 cm ? Label 2 (Iris Virginica) : Label 1 (Iris Versicolour) 
+/*===========================*/
+
 // Function that reads data from a CSV into a 2-D array.
 template <size_t rows, size_t cols>
 void readCSV(double (&array)[rows][cols], char *filename)
