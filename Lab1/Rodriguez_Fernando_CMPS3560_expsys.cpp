@@ -38,7 +38,7 @@ void readCSV(double (&array)[rows][cols], char *filename)
     }
 }
 
-// Function that displays data values
+// function that displays data values
 template <size_t rows, size_t cols>
 void displayValues(double (&array)[rows][cols])
 {
@@ -84,7 +84,7 @@ int main(int argc, char *argv[])
     double pedalData[ROWS][COLS];
     readCSV(pedalData, (char*)"iris.csv");
 
-    //displayValues(pedalData);
+    displayValues(pedalData);
 
     // column 0 = feature, column 1 = label
     constexpr size_t FEATURE_COL = 0;
